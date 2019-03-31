@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/Chapter_11/MRTs/CMakeLists.txt
+  CMake does not need to re-run because D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/bin/Chapter_11/MRTs/CMakeFiles/generate.stamp is up-to-date.
+  MRTs.c
+  MRTs.vcxproj -> D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\bin\Chapter_11\MRTs\Debug\MRTs.exe

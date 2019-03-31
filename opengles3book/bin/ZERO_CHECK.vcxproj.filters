@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\bin\CMakeFiles\3e25e9a298f7ca4fba3034159c28c92e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{063C59F1-3C46-3ECB-8C15-FCB85DD3360B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/Chapter_6/VertexArrayObjects/CMakeLists.txt
+  CMake does not need to re-run because D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/bin/Chapter_6/VertexArrayObjects/CMakeFiles/generate.stamp is up-to-date.
+  VertexArrayObjects.c
+  VertexArrayObjects.vcxproj -> D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\bin\Chapter_6\VertexArrayObjects\Debug\VertexArrayObjects.exe

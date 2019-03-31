@@ -1,0 +1,13 @@
+﻿  Building Custom Rule D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/Common/CMakeLists.txt
+  CMake does not need to re-run because D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/bin/Common/CMakeFiles/generate.stamp is up-to-date.
+  esShader.c
+  esShapes.c
+  esTransform.c
+  esUtil.c
+D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\Common\Source\esUtil.c(297): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1469): note: 参见“vsprintf”的声明
+D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\Common\Source\esUtil.c(331): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+  esUtil_win32.c
+  正在生成代码...
+  Common.vcxproj -> D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\bin\Common\Debug\Common.lib

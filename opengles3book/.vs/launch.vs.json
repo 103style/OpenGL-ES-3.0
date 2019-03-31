@@ -1,0 +1,16 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "native",
+      "name": "Chapter_2",
+      "project": "Chapter_2"
+    },
+    {
+      "type": "default",
+      "project": "Chapter_2",
+      "name": "Chapter_2(1)"
+    }
+  ]
+}

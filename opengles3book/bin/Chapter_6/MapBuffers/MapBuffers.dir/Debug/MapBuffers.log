@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/Chapter_6/MapBuffers/CMakeLists.txt
+  CMake does not need to re-run because D:/projects/opengles/OpenGL-ES-3.0/opengles3-book/bin/Chapter_6/MapBuffers/CMakeFiles/generate.stamp is up-to-date.
+  MapBuffers.c
+  MapBuffers.vcxproj -> D:\projects\opengles\OpenGL-ES-3.0\opengles3-book\bin\Chapter_6\MapBuffers\Debug\MapBuffers.exe
