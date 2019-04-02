@@ -6,17 +6,17 @@ typedef struct {
 int TestloadShader(GLenum type, const char *shaderSrc) {
 	GLuint shader;
 	GLuint complied;
-	//´´½¨×ÅÉ«Æ÷¶ÔÏó
+	//åˆ›å»ºç€è‰²å™¨å¯¹è±¡
 	shader = glCreateShader(type);
 	if (shader == 0) {
-		return 0;
+	    return 0;
 	}
-	//¼ÓÔØ×ÅÉ«Æ÷Ô´³ÌĞò
+	//åŠ è½½ç€è‰²å™¨æºç¨‹åº
 	glShaderSource(shader, 1, &shaderSrc, NULL);
-	//±àÒë×ÅÉ«Æ÷Ô´³ÌĞò
+	//ç¼–è¯‘ç€è‰²å™¨æºç¨‹åº
 	glCompileShader(shader);
 
-	//¼ì²é±àÒëµÄ×´Ì¬
+	//æ£€æŸ¥ç¼–è¯‘çš„çŠ¶æ€
 	glGetShaderiv(shader, GL_COMPILE_STATUS, &complied);
 
 	if (!complied) {
@@ -56,11 +56,11 @@ int TestInit(ESContext *esContext) {
 	GLuint programObject;
 	GLuint linked;
 
-	//¼ÓÔØ ¶¥µã ºÍ Æ¬¶Î  ×ÅÉ«Æ÷
+	//åŠ è½½ é¡¶ç‚¹ å’Œ ç‰‡æ®µ  ç€è‰²å™¨
 	vertexShader = TestloadShader(GL_VERTEX_SHADER, vShaderStr);
 	fragmentShader = TestloadShader(GL_FRAGMENT_SHADER, fShaderStr);
 
-	//´´½¨³ÌĞò
+	//åˆ›å»ºç¨‹åº
 	programObject = glCreateProgram();
 
 	if (programObject == 0) {
@@ -71,10 +71,10 @@ int TestInit(ESContext *esContext) {
 	glAttachShader(programObject, vertexShader);
 	glAttachShader(programObject, fragmentShader);
 
-	//Á´½Ó³ÌĞò
+	//é“¾æ¥ç¨‹åº
 	glLinkProgram(programObject);
 	
-	//¼ì²é³ÌĞòÁ´½Ó×´Ì¬
+	//æ£€æŸ¥ç¨‹åºé“¾æ¥çŠ¶æ€
 	glGetProgramiv(programObject, GL_LINK_STATUS, &linked);
 
 	if (!linked) {
@@ -108,16 +108,16 @@ void TestDraw(ESContext *esContext) {
 		0.5f, 0.5f, 0.0f
 	};
 
-	//ÉèÖÃÒ»¸ö´°¿Ú
+	//è®¾ç½®ä¸€ä¸ªçª—å£
 	glViewport(0, 0, esContext->width, esContext->height);
 
-	//Çå¿ÕÑÕÉ«»º³åÇø
+	//æ¸…ç©ºé¢œè‰²ç¼“å†²åŒº
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	//Á´½Ó³ÌĞò
+	//è®¾ç½®ä¸ºæ´»åŠ¨ç¨‹åº
 	glUseProgram(userData->programObject);
 
-	//¼ÓÔØ¶¥µã×ø±êÊı¾İ
+	//åŠ è½½é¡¶ç‚¹åæ ‡æ•°æ®
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
 	glEnableVertexAttribArray(0);
 
