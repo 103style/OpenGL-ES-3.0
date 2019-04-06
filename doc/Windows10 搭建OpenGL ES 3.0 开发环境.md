@@ -1,3 +1,12 @@
+>转载请以链接形式标明出处： 
+本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
+
+### OpenGL ES 3.0学习实践
+* [Windows10 搭建OpenGL ES 3.0 开发环境](https://blog.csdn.net/lxk_1993/article/details/88921872)
+* [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
+* [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
+* [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
+
 ####  准备工作
 * 下载 [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/downloads/)，`安装教程参考文末的参考资料1,注意下安装目录`, 笔者下载的是企业版，注册码：**NJVYC-BMHX2-G77MM-4XJMR-6Q8QF** ，`参考资料3提供`
 * 下载[《opengles3.0编程指南》源码](https://github.com/danginsburg/opengles3-book)
