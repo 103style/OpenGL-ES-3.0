@@ -1,3 +1,12 @@
+>转载请以链接形式标明出处： 
+本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
+
+### OpenGL ES 3.0学习实践
+* [Windows10 搭建OpenGL ES 3.0 开发环境](https://blog.csdn.net/lxk_1993/article/details/88921872)
+* [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
+* [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
+* [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
+
 ![Hello_Triangle](http://upload-images.jianshu.io/upload_images/1709375-43328d8d31cab09f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
