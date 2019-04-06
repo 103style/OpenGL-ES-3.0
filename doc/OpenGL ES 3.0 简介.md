@@ -1,3 +1,12 @@
+>转载请以链接形式标明出处： 
+本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
+
+### OpenGL ES 3.0学习实践
+* [Windows10 搭建OpenGL ES 3.0 开发环境](https://blog.csdn.net/lxk_1993/article/details/88921872)
+* [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
+* [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
+* [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
+
 ### 简介
 * OpenGL ES (OpenGL for Emberdded Systems)是以 **手持** 和 **嵌入式设备** 为目标的高级3D图形应用编程接口（API）。
 
