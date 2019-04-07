@@ -6,7 +6,7 @@
 * [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
 * [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
 * [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
-
+* [顶点属性、顶点数组和缓冲区对象](https://blog.csdn.net/lxk_1993/article/details/89065284)
 ### 简介
 * OpenGL ES (OpenGL for Emberdded Systems)是以 **手持** 和 **嵌入式设备** 为目标的高级3D图形应用编程接口（API）。
 
@@ -107,9 +107,9 @@ OpenGL ES 3.0 图形管线，在 顶点着色器 之后就是 图元装配 了�
 
 || FP范围 | FP幅值范围 | FP精度 |整数范围 `有符号`|整数范围 `无符号`|
 |:------:|:------:|:------:|:------:|:------:|:------:|
-|`highp` | （2<sup>-126</sup>，2<sup>127</sup>）| 稍微长一点的文本 |2<sup>-24</sup>| （2<sup>-31</sup>，2<sup>31</sup>-1）|（0，2<sup>32</sup>-1）
-| `mediump` | （2<sup>-14</sup>，2<sup>14</sup>） | 中等文本 |2<sup>-10</sup>|（2<sup>-15</sup>，2<sup>15</sup>-1）|（0，2<sup>16</sup>-1）
-| `lowp` | （-2，2） | 中等文本 | 2<sup>-8</sup>|（2<sup>-7</sup>，2<sup>7</sup>-1）|（0，2<sup>8</sup>-1）
+|`highp` | （2<sup>-126</sup>，2<sup>127</sup>）| 0.0, (2<sup>-126</sup>,2<sup>127</sup>)|2<sup>-24</sup>| （2<sup>-31</sup>，2<sup>31</sup>-1）|（0，2<sup>32</sup>-1）
+| `mediump` | （2<sup>-14</sup>，2<sup>14</sup>） | (2<sup>-14</sup>,2<sup>14</sup>) |2<sup>-10</sup>|（2<sup>-15</sup>，2<sup>15</sup>-1）|（0，2<sup>16</sup>-1）
+| `lowp` | （-2，2） | (2<sup>-8</sup>,2) | 2<sup>-8</sup>|（2<sup>-7</sup>，2<sup>7</sup>-1）|（0，2<sup>8</sup>-1）
 
 #### 逐片段操作
   光栅化阶段生成的屏幕坐标为（X<sub>w</sub>,Y<sub>w</sub>）的片段只能修改 **帧缓冲区** 中位置为（X<sub>w</sub>,Y<sub>w</sub>）的像素。
@@ -123,3 +123,5 @@ OpenGL ES 3.0 图形管线，在 顶点着色器 之后就是 图元装配 了�
 
 在逐片段操作阶段的最后，片段 被拒绝 或者   在帧缓冲区（X<sub>w</sub>,Y<sub>w</sub>）位置写入片段的颜色、深度或者模板值。
 写入片段的颜色、深度或者模板值 取决于 **启用的相应写入掩码**。写入掩码可以更精细的控制写入的值。例如，`可以设置颜色缓冲区的写入掩码 使得 任何红色值都不被写入到颜色缓冲区`。
+
+[原文链接:https://www.jianshu.com/p/1ecfc9a43552](https://www.jianshu.com/p/1ecfc9a43552)
