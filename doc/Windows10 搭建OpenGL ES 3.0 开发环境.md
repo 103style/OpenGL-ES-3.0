@@ -6,6 +6,12 @@
 * [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
 * [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
 * [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
+* [顶点属性、顶点数组和缓冲区对象](https://blog.csdn.net/lxk_1993/article/details/89065284)
+
+
+>转载请以链接形式标明出处： [https://blog.csdn.net/lxk_1993/article/details/88921872](https://blog.csdn.net/lxk_1993/article/details/88921872)
+本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
+Windows10 搭建OpenGL ES 3.0 开发环境
 
 ####  准备工作
 * 下载 [Visual Studio 2017](https://visualstudio.microsoft.com/zh-hans/downloads/)，`安装教程参考文末的参考资料1,注意下安装目录`, 笔者下载的是企业版，注册码：**NJVYC-BMHX2-G77MM-4XJMR-6Q8QF** ，`参考资料3提供`
@@ -63,3 +69,5 @@ OK，到此就结束了，有问题请留言。
 1. [Visual Studio 2017安装教程](https://jingyan.baidu.com/article/a948d6512f00d70a2dcd2edc.html)
 2. [windows配置opengles3开发环境](https://blog.csdn.net/mmy545237835/article/details/80762150)
 3. [Windows7下搭建OpenGL ES3.0开发环境(VS2017)](https://blog.csdn.net/u010312436/article/details/82984322)
+
+[原文链接：https://www.jianshu.com/p/b5f8627d9cbc](https://www.jianshu.com/p/b5f8627d9cbc)
