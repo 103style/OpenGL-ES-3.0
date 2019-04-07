@@ -6,7 +6,7 @@
 * [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
 * [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
 * [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
-
+* [顶点属性、顶点数组和缓冲区对象](https://blog.csdn.net/lxk_1993/article/details/89065284)
 
 # 目录
 - 变量和变量类型
