@@ -6,6 +6,7 @@
 * [OpenGL ES 3.0 简介](https://blog.csdn.net/lxk_1993/article/details/88927836)
 * [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
 * [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
+* [顶点属性、顶点数组和缓冲区对象](https://blog.csdn.net/lxk_1993/article/details/89065284)
 
 ![Hello_Triangle](http://upload-images.jianshu.io/upload_images/1709375-43328d8d31cab09f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
