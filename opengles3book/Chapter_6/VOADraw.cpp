@@ -15,7 +15,7 @@ int Init(ESContext *esContext)
 	const char vShaderStr = "#version 300 es \n"
 		"layout(location = 0) in vec4 a_position; \n"
 		"layout(location = 1) in vec4 a_color; \n"
-		"out vec v_color; \n"
+		"out vec4 v_color; \n"
 		"void main() \n"
 		"{ \n"
 		"	v_color = a_color; \n"
@@ -51,9 +51,9 @@ int Init(ESContext *esContext)
 		return GL_FALSE;
 	}
 
+	//保存着色器程序
 	userData->programObject = programObject;
 
-	//保存着色器程序
 	glGenBuffers(2, userData->vboIds);
 
 	glBindBuffer(GL_ARRAY_BUFFER, &userData->vboIds[0]);
@@ -86,7 +86,6 @@ int Init(ESContext *esContext)
 	return GL_TRUE;
 }
 
-
 void Draw(ESContext *esContext)
 {
 	UserData *userData = (UserData*)esContext->userData;
@@ -97,13 +96,12 @@ void Draw(ESContext *esContext)
 
 	glUseProgram(userData->programObject);
 
-	//bind the VAO
+	//绑定顶点数组对象
 	glBindVertexArray(userData->vaoId);
 
-	//draw with wht VAO settings
+	//根据顶点数组对象属性绘制
 	glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_SHORT, (const void*)0);
 
-	//return the default VAO
+	//返回默认的顶点数组对象
 	glBindVertexArray(0);
-
 }

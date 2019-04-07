@@ -33,19 +33,22 @@ void DrawPrimitiveWithVBOs(ESContext *esContext, GLint numVertices, GLfloat *vtx
 	UserData *userData = (UserData*)esContext->userData;
 	GLuint offset = 0;
 
-	if (userData->boIds[0] == 0 && userData->boIds[1] == 0)
+	//vboIds[0] : 保存顶点属性数据 
+	//vboIds[1] : 保存元素索引
+	if (userData->vboIds[0] == 0 && userData->vboIds[1] == 0)
 	{
+		//只在第一次绘制时分配
 		glGenBuffers(2, userData->boIds);
 
-		glBindBuffer(GL_ARRAY_BUFFER, userData->boIds[0]);
+		glBindBuffer(GL_ARRAY_BUFFER, userData->vboIds[0]);
 		glBufferData(GL_ARRAY_BUFFER, vtxStride * numIndices, vtxBuf, GL_STATIC_DRAW);
 
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->boIds[1]);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vboIds[1]);
 		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLushort) * numIndices, indices, GL_STATIC_DRAW);
 	}
 
-	glBindBuffer(GL_ARRAY_BUFFER, userData->boIds[0]);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->boIds[1]);
+	glBindBuffer(GL_ARRAY_BUFFER, userData->vboIds[0]);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vboIds[1]);
 
 	glEnableVertexAttribArray(VERTEX_POS_INDX);
 	glEnableVertexAttribArray(VERTEX_COLOR_INDX);
@@ -68,6 +71,7 @@ void Draw(ESContext *esContext)
 {
 	UserData *userData = (UserData*)esContext->userData;
 
+	//三个顶点  
 	GLfloat vertices[3 * VERTEX_POS_SIZE + VERTEX_COLOR_SIZE] =
 	{
 		-0.5f, 0.5f, 0.0f, // v0
@@ -77,7 +81,7 @@ void Draw(ESContext *esContext)
 		0.0f, -0.5f, 0.0f, //v2
 		0.0f, 0.0f, 1.0f, 1.0f //c2
 	};
-
+	//索引缓冲数据
 	GLushort indices[3] = { 0, 1, 2 };
 
 	glViewport(0, 0, esContext->width, esContext->height);
@@ -86,6 +90,7 @@ void Draw(ESContext *esContext)
 	glUniform1f(userData->offsetLoc, 0.0f);
 
 	DrawPrimitiveWithoutVBOs(vertices, sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE), 3, indices);
+
 	glUniform1f(userData->offsetLoc, 1.0f);
 
 	DrawPrimitiveWithVBOs(esContext, 3, vertices, sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE), 3, indices);

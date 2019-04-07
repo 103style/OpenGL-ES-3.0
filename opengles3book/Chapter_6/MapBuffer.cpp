@@ -8,10 +8,9 @@ glGenBuffers(2, userData->vboIds);
 glBindBuffer(GL_ARRAY_BUFFER, userData->vboIds[0]);
 glBufferData(GL_ARRAY_BUFFER, vtxStride * numVertices, NULL, GL_STATIC_DRAW);
 
-vtxMappedBuf = (GLfloat*)glMapBufferRange(GL_ARRAY_BUFFER, 0,
-	vtxStride*numVertices, GL_MAP_WRITE_BIT | GL_MAP_INVALIDATE_BUFFER_BIT);
+vtxMappedBuf = (GLfloat*)glMapBufferRange(GL_ARRAY_BUFFER, 0, vtxStride*numVertices, GL_MAP_WRITE_BIT | GL_MAP_INVALIDATE_BUFFER_BIT);
 
-if (idxMappedBuf == NULL) {
+if (vtxMappedBuf == NULL) {
 	esLogMessage("Error mapping vertex buffer object");
 	return;
 }
@@ -28,8 +27,7 @@ if (glUnmapBuffer(GL_ARRAY_BUFFER) == GL_FALSE)
 glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, userData->vboIds[1]);
 glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLushort) * numIndices, NULL, GL_STATIC_DRAW);
 
-idxMappedBuf = (GLushort*)glMapBufferRange(GL_ELEMENT_ARRAY_BUFFER, 0,
-	sizeof(GLushort) * numIndices, GL_MAP_WRITE_BIT | GL_MAP_INVALIDATE_BUFFER_BIT);
+idxMappedBuf = (GLushort*)glMapBufferRange(GL_ELEMENT_ARRAY_BUFFER, 0, sizeof(GLushort) * numIndices, GL_MAP_WRITE_BIT | GL_MAP_INVALIDATE_BUFFER_BIT);
 
 if (idxMappedBuf == NULL)
 {
