@@ -71,7 +71,7 @@ typedef struct
 ///
 // Initialize the shader and program object
 //
-int Init ( ESContext *esContext )
+int _Init ( ESContext *esContext )
 {
    GLfloat *positions;
    GLuint *indices;
@@ -298,7 +298,7 @@ int esMain ( ESContext *esContext )
 
    esCreateWindow ( esContext, "Instancing", 640, 480, ES_WINDOW_RGB | ES_WINDOW_DEPTH );
 
-   if ( !Init ( esContext ) )
+   if ( !_Init( esContext ) )
    {
       return GL_FALSE;
    }
