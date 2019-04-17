@@ -7,6 +7,9 @@
 * [OpenGL ES 3.0  Hello_Triangle](https://blog.csdn.net/lxk_1993/article/details/88982974)
 * [OpenGL ES 着色语言](https://blog.csdn.net/lxk_1993/article/details/89046177)
 * [顶点属性、顶点数组和缓冲区对象](https://blog.csdn.net/lxk_1993/article/details/89065284)
+* [图元装配和光栅化](https://blog.csdn.net/lxk_1993/article/details/89365282)
+
+
 ### 简介
 * OpenGL ES (OpenGL for Emberdded Systems)是以 **手持** 和 **嵌入式设备** 为目标的高级3D图形应用编程接口（API）。
 
