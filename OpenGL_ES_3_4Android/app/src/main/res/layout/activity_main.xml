@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mt40_base_mm"
+    android:overScrollMode="never"
+    android:scrollbars="none">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        style="@style/mt40_base_mw"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onHelloTriangleClick"
+            android:text="@string/demo_hello_triangle"
+            android:textAllCaps="false" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onBasisClick"
+            android:text="@string/demo_basis" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onColorClick"
+            android:text="@string/demo_color" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onNativeClick"
+            android:text="@string/demo_basis" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onTextureClick"
+            android:text="@string/demo_texture" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onCameraClick"
+            android:text="@string/demo_camera" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onFilterClick"
+            android:text="@string/demo_filter" />
+
+    </LinearLayout>
+</ScrollView>

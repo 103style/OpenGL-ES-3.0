@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="SampleTextStyle" parent="mt40_base_mw">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/color_FFFFFF</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
 </resources>
