@@ -43,6 +43,7 @@ public class OpenGLESShaderUtils {
         final int shader = GLES30.glCreateShader(type);
         if (shader == 0) {
             //创建失败 输出日志
+            Log.e(TAG, "Error create shader:");
             final String createInfo = GLES30.glGetShaderInfoLog(shader);
             Log.e(TAG, "compileShader createInfo = " + createInfo);
             return 0;
@@ -57,7 +58,7 @@ public class OpenGLESShaderUtils {
         GLES30.glGetShaderiv(shader, GLES30.GL_COMPILE_STATUS, compileRes, 0);
         if (compileRes[0] == 0) {
             //编译失败
-
+            Log.e(TAG, "Error compile shader:");
             //检查日志长度
             final int[] compileInfoLength = new int[1];
             GLES30.glGetShaderiv(shader, GLES30.GL_INFO_LOG_LENGTH, compileInfoLength, 0);
@@ -83,6 +84,7 @@ public class OpenGLESShaderUtils {
         final int programObject = GLES30.glCreateProgram();
         if (programObject == 0) {
             //创建失败 输出日志
+            Log.e(TAG, "Error create program:");
             final String createInfo = GLES30.glGetProgramInfoLog(programObject);
             Log.e(TAG, "linkProgram createInfo = " + createInfo);
             return 0;
@@ -101,7 +103,7 @@ public class OpenGLESShaderUtils {
         GLES30.glGetProgramiv(programObject, GLES30.GL_LINK_STATUS, linkStatus, 0);
         if (linkStatus[0] == 0) {
             //链接失败
-
+            Log.e(TAG, "Error linking program:");
             //检查日志长度
             final int[] compileInfoLength = new int[1];
             GLES30.glGetShaderiv(programObject, GLES30.GL_INFO_LOG_LENGTH, compileInfoLength, 0);

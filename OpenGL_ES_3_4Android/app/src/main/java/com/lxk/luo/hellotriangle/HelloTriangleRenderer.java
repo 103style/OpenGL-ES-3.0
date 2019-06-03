@@ -52,8 +52,8 @@ public class HelloTriangleRenderer implements GLSurfaceView.Renderer {
                 .order(ByteOrder.nativeOrder())
                 .asFloatBuffer();
         //传入指定的坐标数据
-
-        mVertices.put(vPointers);
+        mVertices.put(vPointers)
+                .position(0);
     }
 
     @Override
