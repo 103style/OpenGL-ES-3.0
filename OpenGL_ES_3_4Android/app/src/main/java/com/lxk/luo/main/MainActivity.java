@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.lxk.luo.R;
 import com.lxk.luo.basis.BasisActivity;
+import com.lxk.luo.color.ColorActivity;
 import com.lxk.luo.hellotriangle.HelloTriangleActivity;
 
 /**
@@ -28,12 +29,18 @@ public class MainActivity extends AbstractBaseActivity {
         startActivity(HelloTriangleActivity.class);
     }
 
-    public void onBasisClick(View view) {
-        startActivity(BasisActivity.class);
+    /**
+     * 颜色显示
+     */
+    public void onColorClick(View view) {
+        startActivity(ColorActivity.class);
     }
 
-    public void onColorClick(View view) {
-
+    /**
+     * 基础图像
+     */
+    public void onBasisClick(View view) {
+        startActivity(BasisActivity.class);
     }
 
     public void onNativeClick(View view) {

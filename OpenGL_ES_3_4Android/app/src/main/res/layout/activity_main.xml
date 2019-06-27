@@ -16,18 +16,18 @@
 
         <Button
             style="@style/SampleTextStyle"
-            android:onClick="onBasisClick"
-            android:text="@string/demo_basis" />
-
-        <Button
-            style="@style/SampleTextStyle"
             android:onClick="onColorClick"
             android:text="@string/demo_color" />
 
         <Button
             style="@style/SampleTextStyle"
-            android:onClick="onNativeClick"
+            android:onClick="onBasisClick"
             android:text="@string/demo_basis" />
+
+        <Button
+            style="@style/SampleTextStyle"
+            android:onClick="onNativeClick"
+            android:text="@string/demo_native" />
 
         <Button
             style="@style/SampleTextStyle"

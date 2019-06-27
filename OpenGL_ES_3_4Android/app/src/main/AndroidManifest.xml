@@ -29,6 +29,7 @@
 
         <activity
             android:name=".hellotriangle.HelloTriangleActivity"
+            android:label="@string/demo_hello_triangle"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -37,6 +38,16 @@
 
         <activity
             android:name=".basis.BasisActivity"
+            android:label="@string/demo_basis"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".color.ColorActivity"
+            android:label="@string/demo_color"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
