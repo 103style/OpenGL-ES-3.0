@@ -52,7 +52,7 @@ public class BasisRenderer implements GLSurfaceView.Renderer {
             -0.25f, -0.25f, 0.0f //V7
     };
     /**
-     * 定义索引
+     * 定义六个面的索引
      */
     private short[] indices = {
             //背面

@@ -17,3 +17,12 @@
 .idea/misc.xml
 .idea/runConfigurations.xml
 
+
+# for android-studio
+# Gradle files
+out/
+outputs/
+build/
+.gradle/
+gradlew
+gradlew.bat
