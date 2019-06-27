@@ -17,17 +17,19 @@ public class ColorActivity extends AbstractGLSurfaceActivity {
 
     private ColorRenderer colorRenderer = new ColorRenderer(Color.CYAN);
 
+    private AppCompatButton changeButton;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AppCompatButton button = new AppCompatButton(this);
-        button.setAllCaps(false);
-        button.setText("click to change a random color");
+        changeButton = new AppCompatButton(this);
+        changeButton.setAllCaps(false);
+        changeButton.setText("click to change a random color");
 
-        getRootView().addView(button, 0);
+        getRootView().addView(changeButton, 0);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        changeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 colorRenderer.updateColor(

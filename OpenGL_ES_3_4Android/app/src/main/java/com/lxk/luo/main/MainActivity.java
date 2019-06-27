@@ -7,6 +7,7 @@ import com.lxk.luo.R;
 import com.lxk.luo.basis.BasisActivity;
 import com.lxk.luo.color.ColorActivity;
 import com.lxk.luo.hellotriangle.HelloTriangleActivity;
+import com.lxk.luo.jnative.NativeActivity;
 
 /**
  * @author https://github.com/103style
@@ -44,7 +45,7 @@ public class MainActivity extends AbstractBaseActivity {
     }
 
     public void onNativeClick(View view) {
-
+        startActivity(NativeActivity.class);
     }
 
     public void onTextureClick(View view) {

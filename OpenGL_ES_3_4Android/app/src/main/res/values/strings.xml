@@ -3,7 +3,7 @@
 
     <string name="demo_hello_triangle">Hello Triangle</string>
     <string name="demo_basis">基础图像</string>
-    <string name="demo_color">颜色显示</string>
+    <string name="demo_color">颜色变换</string>
     <string name="demo_native">本地实现</string>
     <string name="demo_texture">图片纹理</string>
     <string name="demo_camera">黑白相机</string>
