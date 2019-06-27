@@ -22,8 +22,6 @@ public class ColorActivity extends AbstractGLSurfaceActivity {
         super.onCreate(savedInstanceState);
 
         AppCompatButton button = new AppCompatButton(this);
-        button.setWidth(200);
-        button.setHeight(200);
         button.setAllCaps(false);
         button.setText("click to change a random color");
 
