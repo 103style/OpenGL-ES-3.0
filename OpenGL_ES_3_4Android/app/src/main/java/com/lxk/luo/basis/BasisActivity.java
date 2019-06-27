@@ -12,6 +12,6 @@ public class BasisActivity extends AbstractGLSurfaceActivity {
 
     @Override
     protected GLSurfaceView.Renderer bindRenderer() {
-        return null;
+        return new BasisRenderer();
     }
 }

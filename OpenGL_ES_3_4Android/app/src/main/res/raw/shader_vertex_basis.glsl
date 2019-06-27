@@ -1,9 +1,9 @@
 #version 300 es
-layout(location = 0) in vec4 a_positon;
-layout(location = 1) in vec4 a_color;
+layout(location = 0) in vec4 vPosition;
+layout(location = 1) in vec4 aColor;
 out vec4 v_color;
 void main(){
-    gl_Position = a_positon;
-    v_color = a_color;
-    pl_PointeSize = 10.0;
+    gl_Position = vPosition;
+    gl_PointSize = 10.0;
+    v_color = aColor;
 }
