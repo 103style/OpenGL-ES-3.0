@@ -28,8 +28,6 @@ out/
 outputs/
 build/
 .gradle/
-gradlew
-gradlew.bat
 
 # IDEA
 *.iml
