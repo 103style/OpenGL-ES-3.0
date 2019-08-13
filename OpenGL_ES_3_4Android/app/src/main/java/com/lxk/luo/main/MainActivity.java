@@ -5,9 +5,12 @@ import android.view.View;
 
 import com.lxk.luo.R;
 import com.lxk.luo.basis.BasisActivity;
+import com.lxk.luo.camera.CameraActivity;
 import com.lxk.luo.color.ColorActivity;
+import com.lxk.luo.filter.FilterActivity;
 import com.lxk.luo.hellotriangle.HelloTriangleActivity;
 import com.lxk.luo.jnative.NativeActivity;
+import com.lxk.luo.texture.TextureActivity;
 
 /**
  * @author https://github.com/103style
@@ -44,20 +47,32 @@ public class MainActivity extends AbstractBaseActivity {
         startActivity(BasisActivity.class);
     }
 
+    /**
+     * 本地实现
+     */
     public void onNativeClick(View view) {
         startActivity(NativeActivity.class);
     }
 
+    /**
+     * 图片纹理
+     */
     public void onTextureClick(View view) {
-
+        startActivity(TextureActivity.class);
     }
 
+    /**
+     * 黑白相机
+     */
     public void onCameraClick(View view) {
-
+        startActivity(CameraActivity.class);
     }
 
+    /**
+     * 滤镜实现
+     */
     public void onFilterClick(View view) {
-
+        startActivity(FilterActivity.class);
     }
 
 
