@@ -1,3 +1,3 @@
 ### OpenGL ES 3.0学习实践
 
-### [doc list](https://www.jianshu.com/nb/35449672)
+### [docs list: https://www.jianshu.com/nb/35449672](https://www.jianshu.com/nb/35449672)
