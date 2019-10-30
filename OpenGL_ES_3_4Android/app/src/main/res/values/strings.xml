@@ -7,5 +7,5 @@
     <string name="demo_native">本地实现</string>
     <string name="demo_texture">图片纹理</string>
     <string name="demo_camera">黑白相机</string>
-    <string name="demo_filter">滤镜实现</string>
+    <string name="demo_filter">滤镜和分镜实现</string>
 </resources>

@@ -82,11 +82,16 @@ public abstract class BaseFilter implements RendererFilter {
     }
 
     public BaseFilter(final String vertexShader, final String fragmentShader) {
+        setFilter(vertexShader, fragmentShader);
+    }
+
+    public void setFilter(final String vertexShader, final String fragmentShader) {
         mVertexShader = vertexShader;
         mFragmentShader = fragmentShader;
         //初始化内存空间
         setupBuffer();
     }
+
 
     private void setupBuffer() {
         //分配内存空间,每个浮点型占4字节空间

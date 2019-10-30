@@ -9,13 +9,11 @@ import com.lxk.luo.utils.IoUtils;
  * @author https://github.com/103style
  * @date 2019/8/13 16:38
  */
-public class GrayFilter extends BaseFilter {
-
+public class ColorFilter extends BaseFilter {
+    public static float[] filterValue = new float[]{0.299f, 0.587f, 0.114f};
     private int aFilterLocation;
 
-    private float[] filterValue = new float[]{0.299f, 0.587f, 0.114f};
-
-    public GrayFilter() {
+    public ColorFilter() {
         super(IoUtils.readShaderResource(R.raw.shader_vertex_gray_filter), IoUtils.readShaderResource(R.raw.shader_fragment_gray_filter));
     }
 

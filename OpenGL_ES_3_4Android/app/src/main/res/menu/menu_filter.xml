@@ -6,8 +6,20 @@
         android:title="原图" />
     <item
         android:id="@+id/filter_gray"
-        android:title="黑白" />
+        android:title="颜色滤镜" />
     <item
-        android:id="@+id/filter_quarter_mirror"
-        android:title="四分镜" />
+        android:id="@+id/filter_mirror_1x2"
+        android:title="1x2分镜" />
+    <item
+        android:id="@+id/filter_mirror_2x1"
+        android:title="2x1分镜" />
+    <item
+        android:id="@+id/filter_mirror_2x2"
+        android:title="2x2分镜" />
+    <item
+        android:id="@+id/filter_mirror_3x2"
+        android:title="3x2分镜" />
+    <item
+        android:id="@+id/filter_mirror_3x3"
+        android:title="3x3分镜" />
 </menu>
